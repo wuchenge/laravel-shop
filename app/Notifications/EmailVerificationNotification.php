@@ -52,7 +52,7 @@ class EmailVerificationNotification extends Notification
                     ->line('请点击下方链接验证您的邮箱')
                     ->greeting($notifiable->name.'您好：')
                     ->subject('注册成功，请验证您的邮箱')
-                    ->action('验证', url('/'));
+                    ->action('验证', url('/email_verification/verify?email=' . $notifiable->email . '&token=' . $token));
     }
 
     /**
