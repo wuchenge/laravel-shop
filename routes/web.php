@@ -1,6 +1,12 @@
 <?php
 
-Route::get('/', 'Home\PagesController@root')->name('root');
+Route::group([
+    'prefix' => '',
+    'namespace' => 'Home'
+], function () {
+    Route::redirect('/', '/products')->name('root');
+    Route::get('products', 'ProductsController@index')->name('products.index');
+});
 
 Auth::routes();
 
