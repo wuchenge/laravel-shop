@@ -7,9 +7,23 @@ use App\Http\Controllers\Controller;
 
 class PagesController extends Controller
 {
+    /**
+     * 首页
+     * @return [type] [description]
+     */
     public function root()
     {
         return view('pages.root');
+    }
+
+    /**
+     * 邮件通知
+     * @param  Request $request [description]
+     * @return [type]           [description]
+     */
+    public function emailVerifyNotice(Request $request)
+    {
+        return view('pages.email_verify_notice');
     }
     
     /**
