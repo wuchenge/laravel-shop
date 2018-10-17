@@ -12,3 +12,5 @@
 */
 
 Route::get('/', 'Home\PagesController@root')->name('root');
+
+Auth::routes();
