@@ -19,6 +19,7 @@
         "vue": "^2.5.7"
     },
     "dependencies": {
-        "ajv": "^6.5.4"
+        "ajv": "^6.5.4",
+        "china-area-data": "^4.0.0"
     }
 }
