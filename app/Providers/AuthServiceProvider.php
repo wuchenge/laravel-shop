@@ -7,6 +7,7 @@ use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvid
 use App\Models\UserAddress;
 use App\Policies\UserAddressPolicy;
 use App\Policies\OrderPolicy;
+use App\Models\Order;
 
 class AuthServiceProvider extends ServiceProvider
 {
