@@ -105,6 +105,15 @@ class Order extends Model
     }
 
     /**
+     * 关联优惠卷
+     * @return [type] [description]
+     */
+    public function couponCode()
+    {
+        return $this->belongsTo(CouponCode::class);
+    }
+
+    /**
      * 生成退款订单号
      * @return [type] [description]
      */
